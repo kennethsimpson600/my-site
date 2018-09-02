@@ -41,9 +41,9 @@ var myImage = document.querySelector('img');
 myImage.onclick = function() {
     var mySrc = myImage.getAttribute('src');
     if(mySrc === 'images/photo3.png') {
-      myImage.setAttribute ('src','img/photo1.jpg');
+      myImage.setAttribute ('src','images/photo1.jpg');
     } else {
-      myImage.setAttribute ('src','img/photo3.png');
+      myImage.setAttribute ('src','images/photo3.png');
     }
 }
 

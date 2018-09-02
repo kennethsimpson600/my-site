@@ -32,7 +32,7 @@ function doubleclick() {
 
 // Text change
 var myHeading = document.getElementById('homework');
-myHeading.textContent = 'Hello world!';
+myHeading.textContent = 'I am Kenneth Simpson';
 
 
 // image change 
@@ -51,7 +51,13 @@ myImage.onclick = function() {
 var myButton = document.querySelector('button');
 
 function setUserName(){
+
 	var yourName = prompt('Please enter your name. ');
+
+	if (yourName == ""){
+		alert("Enter your name");
+		return false;
+	}
 	localStorage.setItem('name', yourName);
 	myHeading.textContent = ' I Will Code For Food,' + yourName; 
 }
